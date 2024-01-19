@@ -1,0 +1,74 @@
+
+
+.contact-page {
+    color: #c0c0c0;
+    background-color: #121212;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    height: 600px; /* Set a fixed height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    border-radius: 10px; /* Optional: for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: adds depth with a shadow */
+}
+
+
+.profile-section {
+    text-align: center;
+    
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ff0097;
+}
+
+.details-section, .links-section, .thesis-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 10px;
+    color: #ff0097;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.social-link:hover {
+    border-bottom: 2px solid #ff00ff;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+/* Style for the scrollbar track (the part the thumb moves along) */
+.contact-page::-webkit-scrollbar-track {
+    background-color: #1a1a1a; /* Dark track background */
+    border-radius: 10px;
+}
+
+/* Style for the scrollbar thumb (the part that's draggable) */
+.contact-page::-webkit-scrollbar-thumb {
+    background-color: #ff0097; /* Neon pink thumb */
+    border-radius: 10px;
+    border: 3px solid #121212; /* Dark border for thumb */
+}
+
+/* Style for the scrollbar width and height */
+.contact-page::-webkit-scrollbar {
+    width: 8px; /* Width of the vertical scrollbar */
+    height: 8px; /* Height of the horizontal scrollbar */
+}
+
+/* For other browsers like Firefox */
+.contact-page {
+    scrollbar-width: thin; /* 'auto' or 'thin' */
+    scrollbar-color: #ff0097 #1a1a1a; /* thumb and track color */
+}

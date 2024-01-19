@@ -1,0 +1,62 @@
+
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
+
+    .gradient-custom-2 {
+        /* Cyberpunk neon gradient */
+        background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+      }
+      
+      @media (min-width: 768px) {
+        .gradient-custom-2 {
+          border-top-right-radius: .3rem;
+          border-bottom-right-radius: .3rem;
+        }
+      }
+      
+      .neon-text {
+        color: #000000; /* Bright neon text */
+        text-shadow: 0 0 5px #b44593, 0 0 10px #b44593, 0 0 20px #b44593, 0 0 40px #b44593;
+      }
+      
+      .neon-button {
+        background-color: #b44593; /* Neon button background */
+        border: none;
+        box-shadow: 0 0 5px #b44593, 0 0 10px #b44593, 0 0 20px #b44593, 0 0 40px #b44593;
+      }
+      
+      .neon-outline-button {
+        border: 1px solid #b44593
+      }      
+
+      #singup{
+        background-color: #b44593; /* Neon button background */
+        border: none;
+        box-shadow: 0 0 5px #b44593, 0 0 10px #b44593, 0 0 20px #b44593, 0 0 40px #b44593;
+        color: white;
+      }
+      .neon-text {
+        color: #000000; /* Bright neon text */
+        text-shadow: 0 0 5px #b44593, 0 0 10px #b44593, 0 0 20px #b44593, 0 0 40px #b44593;
+      }
+      
+      /* Make sure the text stands out against the background */
+      .big {
+        text-shadow: 2px 2px 4px #000;
+      }
+      p{
+        font-size: 15pt;
+        text-shadow: 0 0 5px #b44593, 0 0 10px #b44593, 0 0 20px #b44593, 0 0 40px #b44593;
+      }

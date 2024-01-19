@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+.cyberpunk-container {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light grey text for readability */
+  border-radius: 10px;
+  font-family: 'Orbitron', sans-serif; // Futuristic font
+}
+
+.filter-section, .product-section {
+  padding: 20px;
+}
+
+.sort-header {
+  color: #ff0097; /* Neon pink */
+  font-weight: bold;
+}
+
+.sort-select {
+  background-color: #222;
+  color: #fff;
+  border-color: #ff0097;
+}
+
+
+
+
+.cyberpunk-accordion .accordion-header {
+  color: #ff0097;
+  background-color: #2a2a2a;
+  padding: 10px;
+  font-weight: bold;
+  border: 2px solid #ff0097;
+  border-radius: 5px;
+  width: 100%;
+  height: fit-content;
+}
+
+.cyberpunk-accordion .accordion-header:hover {
+  background-color: #ff0097;
+  color: #000;
+}
+
+.cyberpunk-accordion .accordion-description {
+  font-size: 0.8em;
+  color: #ffffff;
+}
+
+.brand-list, .type-list {
+  padding: 0;
+  list-style: none;
+}
+
+.brand-item, .type-item {
+  background-color: #414040;
+  color: #ffffff;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.brand-item:hover, .type-item:hover {
+  background-color: #ff0097;
+  color: #000;
+}
+
+.brand-item.active, .type-item.active {
+  background-color: #ff0097;
+  color: #000;
+  font-weight: bold;
+}
+
+
+/* Additional styles for product section, buttons, inputs, etc., should follow the same theme */
+.product-item {
+  border-radius: 15px; /* Rounded edges */
+  overflow: hidden; /* Ensures that the content respects the border radius */
+  box-shadow: 0 4px 8px #ff0097; /* Adds a subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.product-item:hover {
+  transform: scale(1.05); /* Slightly enlarges the item on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhances the shadow on hover */
+}
+
+/* Styling for the image inside the product item */
+.product-item img {
+  width: 100%; /* Ensures the image takes the full width of the container */
+  height: auto; /* Keeps the image aspect ratio */
+  object-fit: cover; /* Ensures the image covers the area nicely */
+}
+
+/* Additional styling for the content inside the product item */
+.product-item .product-info {
+  padding: 10px;
+  background-color: #1a1a1a; /* Dark background for the text area */
+  color: #fff; /* Light text for readability */
+}
+.card-body{
+  padding: 10px;
+  background-color: #1a1a1a; /* Dark background for the text area */
+  color: #fff; /* Light text for readability */
+}
+
+
+
+.typelogo {
+  /* Style your image as needed, e.g., setting a max-width or margin */
+  max-width: 50px; /* Example size */
+  margin-left: 10px; /* Space between the text and the image */
+}
+
+p{
+  margin: 0px;
+}

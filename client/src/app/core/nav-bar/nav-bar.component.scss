@@ -1,0 +1,112 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+.cart-no {
+    position: absolute;
+    min-height: 25px;
+    min-width: 25px;
+    border-radius: 50%;
+    background-color: #4C4C4C; // Metallic gray
+    color: fa459f;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    top: -12px;
+    right: 32px;
+}
+
+.mainHeader {
+    background-color: #202020; // Dark background
+    border-bottom: 1px solid #EC5BC6;
+    font-family: 'Orbitron', sans-serif; // Futuristic font
+}
+a {
+    text-decoration: none;
+    color: #EC5BC6 ; // Metallic text color
+
+    &:hover {
+        color: #FFF; // Brighter color on hover
+        transition: color 0.3s ease-in-out;
+    }
+
+    &.active {
+        color: #000000;
+        background-color: #2a2a2a; // Metallic active state
+        border-radius: 15px;
+        padding: 5px 10px; // Added padding for better visibility
+    }
+}
+
+.logoImage {
+    max-height: 100px;
+    cursor: pointer;
+}
+
+p {
+    color: #EC5BC6; // Consistent text color
+}
+
+Additional styling for a more modern look
+nav a {
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-menu {
+    background-color: #202020; // Dark dropdown background
+    border: none;
+
+    .dropdown-item {
+        color: #EC5BC6; // Metallic text in dropdown
+        text-align: center; 
+        &:hover {
+            background-color: #000000;
+        }
+    }
+}
+
+// Styling for the shopping cart icon
+.fa-shopping-cart {
+    color: rgb(236, 91, 198); // Metallic icon color
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(236, 91, 198)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    width: 40px; /* Increase width */
+    height: 30px; /* Increase height */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.navbar-toggler-icon-account{
+    width: 40px; /* Increase width */
+    height: 40px; /* Increase height */
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #EC5BC6;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+.dropdown-menu{
+    background-color: #121212;
+    align-items: center;
+}
+.dropdown-menu {
+    background-color: #121212;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); // Add shadow for depth
+    border-radius: 8px; // Rounded corners
+    padding: 10px; // Padding inside the dropdown
+}
+
+.dropdown-item {
+    color: #EC5BC6;
+    text-align: center;
+    padding: 8px 20px; // Padding for each item
+    transition: background-color 0.3s ease; // Smooth transition for hover
+
+    &:hover {
+        background-color: #2a2a2a; // Slightly lighter background on hover
+    }
+}
