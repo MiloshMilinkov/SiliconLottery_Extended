@@ -6,3 +6,5 @@ The project will be done with the help of three technologies.
 3. Microsoft SQL (Server v18,Production), SQLite (Development)
 
 Some personal challenges are full versioning with GIT and full development of the application in Visual Studio Code IDE.
+
+THIS IS A CONTINUED REPO FROM https://github.com/MiloshMilinkov/SiliconLottery, i made a mistake in version controll that cost me the functionality to commit further to the mentioned remote repo, this repo will be inherit it.
