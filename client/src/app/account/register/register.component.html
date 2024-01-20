@@ -1,4 +1,4 @@
-<div class="d-flex justify-content-center mt-5">
+<!-- <div class="d-flex justify-content-center mt-5">
     <div class="col-3">
         <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
             <div class="text-center mb-4">
@@ -14,25 +14,60 @@
                     {{error}}
                 </li>
             </ul>
-            <!-- <div class="form-floating mb-3">
-                <input 
-                    [class.is-invalid] = "loginForm.get('email')?.touched && loginForm.get('email')?.invalid"
-                    type="email" 
-                    formControlName="email" 
-                    class="form-control"
-                    id="floatingInput" 
-                    placeholder="Email">
-                <label for="floatingInput">Email address</label>
-                <div *ngIf="loginForm.get('email')?.errors?.['required']" class="invalid-feedback">Please choose an email</div>
-                <div *ngIf="loginForm.get('email')?.errors?.['email']"class="invalid-feedback">Invalid email</div>
-              </div> -->
-              <!-- <div class="form-floating">
-                <input type="password" formControlName="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-              </div> -->
               <div class="d-grid">
                 <button [disabled]="registerForm.invalid" class="btn btn-lg btn-primary mt-3" type="submit">Sign up</button>
             </div>
         </form>  
     </div>
-</div>
+</div> -->
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100"  >
+        <div class="col-lg-12 col-xl-11" >
+          <div class="card text-black" style="border-radius: 25px; " style="background-image: url('/assets/Images/signup_background.png');" >
+            <div class="card-body p-md-5">
+              <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+  
+                  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+  
+                  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="mx-1 mx-md-4">
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <app-text-input [formControl]="registerForm.controls['displayName']" [label]="'Display name'"></app-text-input>
+                        <label class="form-label" for="form3Example1c">Your Name</label>
+                      </div>
+                    </div>
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <app-text-input [formControl]="registerForm.controls['email']" [label]="'Email address'"></app-text-input>
+                        <label class="form-label" for="form3Example3c">Your Email</label>
+                      </div>
+                    </div>
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <app-text-input [formControl]="registerForm.controls['password']" [type]="'password'" [label]="'Password'"></app-text-input>
+                        <label class="form-label" for="form3Example3c">Your Password</label>
+                      </div>
+                    </div>
+  
+                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                      <button [disabled]="registerForm.invalid" class="btn btn-lg btn-primary mt-3" type="submit">Sign up</button>
+                    </div>
+  
+                  </form>
+  
+                </div>
+                <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -110,3 +110,43 @@ nav a {
         background-color: #2a2a2a; // Slightly lighter background on hover
     }
 }
+
+.mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 4px;
+    margin-bottom: 3px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100; /* Adjust as per your z-index requirements */
+}
+
+.mainHeader > div {
+    flex: 1; /* Ensures that each child of header takes equal space */
+}
+
+.logoImage {
+    display: block; /* Makes sure image is a block-level element */
+    margin: 0 auto; /* Centers the image in the div */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mainHeader > div {
+        flex: none; /* Adjust this as per your mobile layout */
+    }
+}
+.left-container, .right-container {
+    flex: 1;  /* Make both containers take equal space */
+    display: flex;
+}
+
+.left-container {
+    /* Align items to the left if necessary */
+}
+
+.right-container {
+    justify-content: flex-end; /* Align items to the right */
+}

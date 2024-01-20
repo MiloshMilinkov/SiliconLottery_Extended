@@ -1,6 +1,6 @@
 <header class="mainHeader d-flex flex-md-row align-items-center justify-content-between p-3 px-4 mb-3  fixed-top shadow-sm">
     <ng-container>
-        <div class="dropdown ms-3 me5" style="cursor: pointer;" dropdown>
+        <div class="left-container dropdown ms-3 me5" style="cursor: pointer;" dropdown>
             <button dropdownToggle class="btn btn-link navbar-toggler">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,7 +24,9 @@
     <div class="mx-auto">
         <img class="logoImage" src="/assets/Images/storeLogo.png" alt="Store logo." routerLink="/">
     </div>
-    <div class="d-flex flex-ms-column align-items-center">
+
+    
+    <div class="right-container d-flex flex-ms-column align-items-center">
         <a routerLink="/basket"  class="position-relative">
             <i class="fa fa-shopping-cart  fa-2x me-5 text-white"></i>
             <div class="cart-no" *ngIf="(basketService.basketSource$ | async) as basket">
@@ -32,8 +34,8 @@
             </div>
         </a>
         <ng-container *ngIf="(accountService.currentUser$ | async) === null">
-            <a routerLink="/account/login" class="btn btn-outline-secondary me-2 text-white" >Login</a>
-            <a routerLink="/account/register" class="btn btn-outline-secondary me-3 text-white">Sign Up</a>
+            <a routerLink="/account/login" class="btn btn-outline-secondary me-2 text-white" >Sign in</a>
+            <a routerLink="/account/register" class="btn btn-outline-secondary me-3 text-white">Sign up</a>
         </ng-container>
         <ng-container  *ngIf="accountService.currentUser$ | async as user">
             <div class="dropdown ms-3 me5" style="cursor: pointer;" dropdown>
