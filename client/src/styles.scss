@@ -53,7 +53,11 @@ body {
   background-color: #131212!important;
 }
 
-label.xng-breadcrumb-trail{
-  color: #FF97E9;
+a.xng-breadcrumb-link,  li.xng-breadcrumb-separator{
+  color: #fca8ea;
   font-weight: bold;
+} 
+label.xng-breadcrumb-trail{
+  color: white; /* Bright neon text */
+  text-shadow: 0 0 5px #b44593, 0 0 10px #b44593, 0 0 20px #b44593, 0 0 40px #b44593;
 }

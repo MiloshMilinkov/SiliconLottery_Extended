@@ -117,3 +117,17 @@
 p{
   margin: 0px;
 }
+
+.btn-search, .btn-reset{
+  color: white;
+  background-color: #b44593; /* Neon button background */
+        border: none;
+        box-shadow: 0 0 5px #b44593, 0 0 10px #b44593, 0 0 20px #b44593, 0 0 40px #b44593;
+}
+
+.xng-breadcrumb-link{
+  background: #d7ebff;
+  border-radius: 0;
+  border: none;
+  color: #ffffff;
+}
