@@ -1,3 +1,6 @@
 th, td{
     color: white;
 }
+.table-hover tbody tr:hover {
+    background-color: #b44593; /* Change this to your desired hover color */
+}
