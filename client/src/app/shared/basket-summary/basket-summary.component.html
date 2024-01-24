@@ -1,6 +1,6 @@
 <div class="table-responsive" *ngIf="(basketService.basketSource$ | async) as basket">
     <table class="table">
-        <thead class="text-uppercase" [class.bg-light]="isBasket">
+        <thead class="text-uppercase bg-light" [class.bg-light]="isBasket" style="background-color: white;">
             <tr>
                 <th><div class="py-2">Product</div></th>
                 <th><div class="py-2">Price</div></th>

@@ -1,0 +1,47 @@
+h4, strong{
+    color: white;
+    text-shadow: 0 0 5px #b44593, 0 0 10px #b44593, 0 0 20px #b44593, 0 0 40px #b44593;
+}
+button{
+    background-color: #b44593; /* Neon button background */
+    border: none;
+    color: white;
+}
+button:hover{
+    background-color: #b44593;
+    color: white;
+    box-shadow: 0 0 5px #b44593, 0 0 10px #b44593, 0 0 20px #b44593, 0 0 40px #b44593;
+}
+.label-description{
+    color: white;
+}
+.label-description,strong{
+    text-transform: uppercase;
+}
+
+
+/* Hide the default radio button */
+.form-check-input {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .form-check-input + label:before {
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+    border: 3px solid #b44593; 
+    background-color: white; 
+    border-radius: 50%; 
+    width: 20px; 
+    height: 20px; 
+    vertical-align: bottom;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  
+  .form-check-input:checked + label:before {
+    background-color:#b44593; 
+  }
+  

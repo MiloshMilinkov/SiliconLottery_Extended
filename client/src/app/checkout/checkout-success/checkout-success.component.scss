@@ -1,0 +1,26 @@
+h4, h2{
+    color: white;
+    text-shadow: 0 0 5px #b44593, 0 0 10px #b44593, 0 0 20px #b44593, 0 0 40px #b44593;
+}
+button{
+    background-color: #b44593; /* Neon button background */
+    border: none;
+    color: white;
+}
+button:hover{
+    background-color: #b44593;
+    color: white;
+    box-shadow: 0 0 5px #b44593, 0 0 10px #b44593, 0 0 20px #b44593, 0 0 40px #b44593;
+}
+h2{
+    margin-left: 20px;
+}
+.fa{
+    color: white;
+    text-shadow: 0 0 5px #b44593, 0 0 10px #b44593, 0 0 20px #b44593, 0 0 40px #b44593;
+}
+.notShippedInfo{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+}
