@@ -24,7 +24,7 @@ namespace SL_API.Controllers
         }
         
 
-
+        [Cached(60)]
         [HttpGet]
         public async Task<ActionResult<Pagination<ProductDto>>> GetProducts([FromQuery] string searchTerm, [FromQuery] string orderBy = "nameAsc", 
         [FromQuery] int? pageIndex = 1, [FromQuery] int pageSize = 5, [FromQuery] int? typeId = null, [FromQuery] int? brandId = null)
@@ -36,7 +36,8 @@ namespace SL_API.Controllers
 
             return Ok(new Pagination<ProductDto>(pageIndex.Value, pageSize, totalCount, data));
         }
-   
+
+        [Cached(60)]
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
@@ -61,8 +62,9 @@ namespace SL_API.Controllers
             };
             return Ok(product);
         }
-        
+
         // GET: api/products/types
+        [Cached(60)]
         [HttpGet("types")]
         public async Task<ActionResult<IReadOnlyList<ProductType>>> GetProductTypes()
         {
@@ -70,6 +72,7 @@ namespace SL_API.Controllers
         }
 
         // GET: api/products/brands
+        [Cached(60)]
         [HttpGet("brands")]
         public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductBrands()
         {
