@@ -17,10 +17,10 @@ namespace Infrastructure.Data
         
         private OrderRepository _orderRepository;
 
-        public UnitOfWork(StoreContext storeContext, IConnectionMultiplexer redis)
+        public UnitOfWork(StoreContext storeContext)
         {
             _storeContext = storeContext;
-            _basketRepository = new BasketRepository(redis);
+            _basketRepository = new BasketRepository(storeContext);
         }
 
         public IProductRepository ProductRepository => _productRepository ??= new ProductRepository(_storeContext);

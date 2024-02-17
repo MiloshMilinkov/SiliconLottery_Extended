@@ -30,7 +30,7 @@ export class ProductDetailsComponent implements OnInit {
       this.shopService.getProduct(+id).subscribe({
         next: product => {
           this.product=product;
-          this.product.pictureUrl= 'https://localhost:5001/' + product.pictureUrl;
+          this.product.pictureUrl= product.pictureUrl;
           this.breadCrumbService.set('@productDetails',product.name);
           this.basketService.basketSource$.pipe(take(1)).subscribe({
             next: basket =>{

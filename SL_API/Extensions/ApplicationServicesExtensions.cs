@@ -33,9 +33,7 @@ namespace SL_API.Extensions
             });
             services.AddScoped<IBasketRepository,BasketRepository>();
 
-            //CachingService
-            services.AddSingleton<IResponseCacheService,ResponseCacheService>();
-
+            
             //Addind our service only for the lifetime of the http request, good for data gathering!
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IDeliveryRepository, DeliveryRepository>();

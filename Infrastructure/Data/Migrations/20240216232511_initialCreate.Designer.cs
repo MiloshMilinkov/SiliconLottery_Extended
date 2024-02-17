@@ -11,14 +11,58 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20231007135437_OrderEntityAdded")]
-    partial class OrderEntityAdded
+    [Migration("20240216232511_initialCreate")]
+    partial class initialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.8");
+
+            modelBuilder.Entity("Core.Entities.BasketItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Brand")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CustomerBasketId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PictureUrl")
+                        .HasColumnType("TEXT");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("REAL");
+
+                    b.Property<string>("ProductName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Type")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CustomerBasketId");
+
+                    b.ToTable("BasketItems");
+                });
+
+            modelBuilder.Entity("Core.Entities.CustomerBasket", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CustomerBaskets");
+                });
 
             modelBuilder.Entity("Core.Entities.Order.Delivery", b =>
                 {
@@ -162,6 +206,13 @@ namespace Infrastructure.Data.Migrations
                     b.ToTable("ProductTypes");
                 });
 
+            modelBuilder.Entity("Core.Entities.BasketItem", b =>
+                {
+                    b.HasOne("Core.Entities.CustomerBasket", null)
+                        .WithMany("Items")
+                        .HasForeignKey("CustomerBasketId");
+                });
+
             modelBuilder.Entity("Core.Entities.Order.Order", b =>
                 {
                     b.HasOne("Core.Entities.Order.Delivery", "Delivery")
@@ -248,6 +299,11 @@ namespace Infrastructure.Data.Migrations
                     b.Navigation("ProductBrand");
 
                     b.Navigation("ProductType");
+                });
+
+            modelBuilder.Entity("Core.Entities.CustomerBasket", b =>
+                {
+                    b.Navigation("Items");
                 });
 
             modelBuilder.Entity("Core.Entities.Order.Order", b =>
