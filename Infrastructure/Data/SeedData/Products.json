@@ -102,6 +102,71 @@
         "PictureUrl":"images/products/Intel_i9_12900K.png",
         "ProductTypeId":2,
         "ProductBrandId":10
+    },
+    {
+        "Name": "PowerColor_AXRX_6800XT_16GBD6-3DHEOC",
+        "Description":"The PowerColor Red Devil RX 6800 XT features a new design with triple fans (100mm x 90mm x 100mm),\n a 320mm cooler with 7 heatpipes, and a large copper base improves heat transfer and dissipation from the GPU and the VRAMs to provide ultra-efficient cooling.\n The Red Devil RX 6800 XT is also equipped with a state-of-the-art PCB design utilizing a 14+2 phase VRM with DrMOS,\n high quality polymer capacitors, and two 8-pin PCI-E connectors will power the PowerColor RX 6800 XT Red Devil.",
+        "Price":550,
+        "PictureUrl":"images/products/PowerColor_AXRX_6800XT_16GBD6-3DHEOC.png",
+        "ProductTypeId":4,
+        "ProductBrandId":6
+    },
+    {
+        "Name": "GYGABITE GeForce RTX 4070 Gaming OC 12gb",
+        "Description":"Powered by NVIDIA DLSS 3, ultra-efficient Ada Lovelace arch, and full ray tracing  \n 4th Generation Tensor Cores: Up to 4x performance with DLSS 3 vs. brute-force rendering \n 3rd Generation RT Cores: Up to 2X ray tracing performance \n Powered by GeForce RTX™ 4070\n Integrated with 12GB GDDR6X 192bit memory interface \n WINDFORCE cooling system\n RGB Fusion\n Dual BIOS\n Protection metal back plate\n 4 Years Warranty (Online registration required)",
+        "Price":599,
+        "PictureUrl":"images/products/GYGABITE GeForce RTX 4070 Gaming OC 12gb.png",
+        "ProductTypeId":4,
+        "ProductBrandId":5
+    },
+    {
+        "Name": "GYGABITE B550 Gaming X rev1.0",
+        "Description":"Supports AMD Ryzen™ 5000 Series/ Ryzen™ 5000 G-Series/ Ryzen™ 4000 G-Series/ Ryzen™ 3000 and Ryzen™ 3000 G-Series Processors\nDual Channel ECC/ Non-ECC Unbuffered DDR4, 4 DIMMs\n10+3 Phases Pure Digital VRM Solution with Low RDS(on) MOSFETs\nUltra Durable™ PCIe 4.0 Ready x16 Slot\nUltra-Fast NVMe PCIe 4.0/3.0 M.2 Slots\nGIGABYTE Exclusive 8118 Gaming LAN with Bandwidth Management\nHDMI, DVI-D Ports for Multiple Display\nFeatures High Quality Audio Capacitors\nRGB FUSION 2.0 support Addressable LED & RGB LED Strips\nSmart Fan 5 Features Multiple Temperature Sensors , Hybrid Fan Headers with FAN STOP\nQ-Flash Plus Update BIOS without Installing the CPU, Memory and Graphics Card\nAnti-Sulfur Resistors Design",
+        "Price":140,
+        "PictureUrl":"images/products/GYGABITE B550 Gaming X rev1.0.png",
+        "ProductTypeId":1,
+        "ProductBrandId":5
+    },
+    {
+        "Name": "MSI MAG B550 TOMAHAWK MOTHERBOARD",
+        "Description":"Supports AMD Ryzen™ 5000 & 3000 Series desktop processors (not compatible with AMD Ryzen™ 5 3400G & Ryzen™ 3 3200G) and AMD Ryzen™ 4000 G-Series desktop processors\nSupports DDR4 Memory, up to 5100+(OC) MHz\nLightning Fast Game experience: PCIe 4.0, Lightning Gen 4 x4 M.2 with M.2 Shield Frozr, AMD Turbo USB 3.2 Gen 2\nPremium Thermal Solution: Extended Heatsink Design with additional choke thermal pad rated for 7W/mk and PCB with 2oz thickened copper are built for high performance system and non-stop gaming experience.\nEnhanced Power Design: 10+2+1 Duet Rail Power System, Digital PWM, Core Boost, DDR4 Boost.\nLatest Network Solution: Onboard 2.5G LAN plus Gigabit LAN deliver the best online experience without lag.\nMystic Light: 16.8 million colors / 29 effects controlled in one click. Mystic Light Extension supports RGB and RAINBOW LED strip.\nPre-installed I/O Shielding: Better EMI protection and more convenience for installation.\nAudio Boost: Reward your ears with studio grade sound quality for the most immersive gaming experience.\nMulti-GPU: With Steel Armor PCI-E slots. Supports 2-Way AMD Crossfire™",
+        "Price":170,
+        "PictureUrl":"images/products/MSI MAG B550 TOMAHAWK MOTHERBOARD.png",
+        "ProductTypeId":1,
+        "ProductBrandId":4
+    },
+    {
+        "Name": "MSI MAG B550 TOMAHAWK MOTHERBOARD",
+        "Description":"Supports AMD Ryzen™ 5000 & 3000 Series desktop processors (not compatible with AMD Ryzen™ 5 3400G & Ryzen™ 3 3200G) and AMD Ryzen™ 4000 G-Series desktop processors\nSupports DDR4 Memory, up to 5100+(OC) MHz\nLightning Fast Game experience: PCIe 4.0, Lightning Gen 4 x4 M.2 with M.2 Shield Frozr, AMD Turbo USB 3.2 Gen 2\nPremium Thermal Solution: Extended Heatsink Design with additional choke thermal pad rated for 7W/mk and PCB with 2oz thickened copper are built for high performance system and non-stop gaming experience.\nEnhanced Power Design: 10+2+1 Duet Rail Power System, Digital PWM, Core Boost, DDR4 Boost.\nLatest Network Solution: Onboard 2.5G LAN plus Gigabit LAN deliver the best online experience without lag.\nMystic Light: 16.8 million colors / 29 effects controlled in one click. Mystic Light Extension supports RGB and RAINBOW LED strip.\nPre-installed I/O Shielding: Better EMI protection and more convenience for installation.\nAudio Boost: Reward your ears with studio grade sound quality for the most immersive gaming experience.\nMulti-GPU: With Steel Armor PCI-E slots. Supports 2-Way AMD Crossfire™",
+        "Price":170,
+        "PictureUrl":"images/products/MSI MAG B550 TOMAHAWK MOTHERBOARD.png",
+        "ProductTypeId":1,
+        "ProductBrandId":4
+    }
+    ,
+    {
+        "Name": "1TB SSD 850 PRO SATA III 2.5inch",
+        "Description":"Size: 1tb \nSequential Reads: Up to 560 MB/s\nSequentia Writes: 530 MB/s",
+        "Price":70,
+        "PictureUrl":"images/products/1TB SSD 850 PRO SATA III 2.5inch.png",
+        "ProductTypeId":5,
+        "ProductBrandId":7
+    },
+    {
+        "Name": "SAMSUNG SSD 970 EVO PLUS 1TB NVMe M2 2280",
+        "Description":"Size: 1tb \nSequential Reads: Up to 3500 MB/s\nSequentia Writes: 3300 MB/s",
+        "Price":100,
+        "PictureUrl":"images/products/SAMSUNG SSD 970 EVO PLUS 1TB NVMe M2 2280.png",
+        "ProductTypeId":5,
+        "ProductBrandId":7
+    },
+    {
+        "Name": "Ssd Patriot P400 lite 500GB PCIe gen4",
+        "Description":"Size: 500gb \nSequential Reads: Up to 3400 MB/s\nSequentia; Writes: 2800 MB/s",
+        "Price":170,
+        "PictureUrl":"images/products/Ssd Patriot P400 lite 500GB PCIe gen4.png",
+        "ProductTypeId":1,
+        "ProductBrandId":4
     }
 
 ]

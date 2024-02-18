@@ -54,8 +54,6 @@
       </aside>
 
       <main class="product-section col-9">
-          <!-- Product Display and Pagination -->
-          <!-- ... Rest of your main section content ... -->
           <div class="d-flex justify-content-between align-items-center pb-2">
 
             <app-paging-header
@@ -71,7 +69,7 @@
             </div>
 
         </div>
-        <div class="row row-cols-3 g-3 mb-5">
+        <div class="row row-cols-3 g-3 mb-5" *ngIf="products.length > 0; else noProducts">
           <div class="col" *ngFor="let product of products">
               <div class="product-item">
                   <app-product-item [product]="product"></app-product-item>
@@ -87,6 +85,14 @@
                 (pageChanged)="onPageChanged($event)"
             ></app-pager>
         </div>
+        <ng-template #noProducts>
+          <div class="row">
+              <div class="col text-center">
+                  <img src="/assets/Images/notFoundImage.png" alt="" style="width: 185px;display: flex; align-items: center;">
+                  <p style="font-weight: bolder;">There are no products for the categories you selected!</p>
+              </div>
+          </div>
+      </ng-template>
       </main>
   </div>
 </div>
