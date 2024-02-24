@@ -1,6 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 bitton.nav-link {
     background: #e9ecef;
     border-radius: 0;
     border: none;
     color: #333;
+}
+
+.container {
+    background-color: #202020; 
+    padding: 20px; 
+    font-family: 'Orbitron', sans-serif; 
+}
+
+.nav-pills .nav-link {
+    background: transparent; 
+    border-radius: 4px; 
+    color: #fff; 
+    margin-right: 10px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.nav-pills .nav-link.active {
+    background-color: #b44593; 
+    color: #fff; 
+    box-shadow: 0 0 10px #b44593; 
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #ff66c4; 
+    color: #202020;
+    box-shadow: 0 0 15px #ff66c4; 
+}
+
+.nav-pills .nav-link {
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+
+@media (max-width: 768px) {
+    .nav-pills .nav-link {
+        margin-right: 5px; 
+        padding: 8px 15px; 
+    }
 }

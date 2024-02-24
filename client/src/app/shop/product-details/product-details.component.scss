@@ -1,5 +1,5 @@
 
-    
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
     @media (min-width: 768px) {
         .gradient-form {
         height: 100vh !important;
@@ -78,4 +78,7 @@
           h2{
             color:#7a04eb;
             text-shadow: 0 0 2px #8618ec, 0 0 10px #7a04eb;
+          }
+          .container{
+            font-family: 'Orbitron', sans-serif; 
           }

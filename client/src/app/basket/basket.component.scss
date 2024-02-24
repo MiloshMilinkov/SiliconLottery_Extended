@@ -1,7 +1,62 @@
-p{
-    font-size: 50pt;
-        color: white; /* Bright neon text */
-        text-shadow: 0 0 5px #b44593, 0 0 10px #b44593, 0 0 20px #b44593, 0 0 40px #b44593;
-      
-      
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+.container.basket-container {
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif; 
+}
+
+.basket-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.not-found-image {
+    width: 185px;
+    margin-bottom: 20px;
+}
+
+.empty-message {
+    font-size: 1.5rem; 
+    color: #ffffff;
+    text-shadow: 0 0 5px #b44593, 0 0 10px #b44593, 0 0 20px #b44593, 0 0 40px #b44593;
+}
+
+
+.row {
+    margin-top: 20px;
+}
+
+
+.btn-proceed {
+    background-color: #b44593;
+    border: 1px solid #b44593;
+    color: #fff; 
+    font-weight: bold; 
+    padding: 10px 20px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    transition: background-color 0.3s, color 0.3s; 
+    display: block; 
+    text-align: center; 
+    margin: 10px auto; 
+    border-radius: 4px; 
+    text-decoration: none;
+    
+    &:hover, &:focus {
+        background-color: #fff; 
+        color: #b44593; 
+        text-decoration: none; 
+        border-color: #fff; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .totals-and-checkout .col-6 {
+        width: 100%;
+        max-width: none;
+    }
 }

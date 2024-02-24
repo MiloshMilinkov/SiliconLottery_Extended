@@ -1,0 +1,23 @@
+/* pager.component.scss */
+.custom-pagination {
+    ::ng-deep .pagination {
+      justify-content: center; // Centers the pagination buttons
+      li {
+        a {
+          background-color: #202020; // Matches the dark theme
+          color: #fff;
+          margin: 0 2px;
+          border: none;
+          &:hover, &:focus {
+            background-color: #404040;
+            outline: none;
+          }
+        }
+        &.active a {
+          background-color: #505050;
+          border-color: #505050;
+        }
+      }
+    }
+  }
+  

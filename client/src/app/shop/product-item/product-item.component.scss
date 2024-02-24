@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 .card {
     border-radius: 15px; /* Rounded edges */
     overflow: hidden; /* Ensures content respects border radius */
@@ -10,6 +10,7 @@
     width: 100%; /* Full width */
     display: flex; /* Enables flexbox layout */
     flex-direction: column; /* Stack children vertically */
+    font-family: 'Orbitron', sans-serif; 
 }
 
 .image {
