@@ -17,7 +17,7 @@ namespace Infrastructure.Data
         public DbSet<Delivery> Delivery { get; set; }
         public DbSet<CustomerBasket> CustomerBaskets { get; set; }
         public DbSet<BasketItem> BasketItems { get; set; }
-        
+        public DbSet<Basket> Baskets { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder){
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

@@ -27,7 +27,10 @@ export class CheckoutComponent implements OnInit {
       delivery: ['', Validators.required]
     }),
     paymentForm: this.fb.group({
-      nameOnCard: ['', Validators.required]
+      cardNumber: ['', [Validators.required, Validators.pattern(/^\d{16}$/)]],
+      expiryMonth: ['', [Validators.required, Validators.pattern(/^(0[1-9]|1[0-2])$/)]],
+      expiryYear: ['', [Validators.required, Validators.pattern(/^\d{4}$/)]],
+      cvv: ['', [Validators.required, Validators.pattern(/^\d{3}$/)]],
     })
   })
 

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20240218124513_initialCreate")]
+    [Migration("20240229210900_initialCreate")]
     partial class initialCreate
     {
         /// <inheritdoc />
@@ -19,6 +19,22 @@ namespace Infrastructure.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.8");
+
+            modelBuilder.Entity("Core.Entities.Basket", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("BasketData")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("lastUpdated")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Baskets");
+                });
 
             modelBuilder.Entity("Core.Entities.BasketItem", b =>
                 {

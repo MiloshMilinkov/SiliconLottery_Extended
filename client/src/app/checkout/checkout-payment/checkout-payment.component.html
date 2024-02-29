@@ -2,11 +2,31 @@
     <img src="/assets/Images/notFoundImage.png" alt="" style="width: 185px;">
     <p style="color: white;font-weight: bolder;">PAYMENT METHODS ARE IN DEVELOPMENT!</p>
 </div>
+
+<form *ngIf="checkoutForm" [formGroup]="checkoutForm">>
+    <div formGroupName="paymentForm">
+      <div class="form-group col-6">
+        <app-text-input [label]="'Card Number'" formControlName="cardNumber"></app-text-input>
+    </div>
+      <div class="form-group col-6">
+        <app-text-input [label]="'Expiry Month'" formControlName="expiryMonth"></app-text-input>
+    </div>
+    <div class="form-group col-6">
+        <app-text-input [label]="'Expiry Year'" formControlName="expiryYear"></app-text-input>
+    </div>
+    <div class="form-group col-6">
+        <app-text-input [label]="'CVV'" formControlName="cvv"></app-text-input>
+    </div>
+      <!-- Add additional fields for expiryMonth, expiryYear, and cvv here -->
+    </div>
+  </form>
+
+  
 <div class="d-flex justify-content-between flex-row mb-5 mt-5">
     <button class="btn btn-outline-primary" cdkStepperPrevious>
         <i class="fa fa-angle-left"></i> Back to review
     </button>
-    <button class="btn btn-primary" (click)="submitOrder()">
+    <button class="btn btn-primary" (click)="submitOrder()" [disabled]="!checkoutForm?.get('paymentForm')?.valid">
         Submit Order <i class="fa fa-angle-right"></i> 
     </button>
 </div>

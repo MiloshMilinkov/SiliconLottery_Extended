@@ -12,6 +12,19 @@ namespace Infrastructure.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Baskets",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "TEXT", nullable: false),
+                    BasketData = table.Column<string>(type: "TEXT", nullable: true),
+                    lastUpdated = table.Column<DateTime>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Baskets", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "CustomerBaskets",
                 columns: table => new
                 {
@@ -199,6 +212,9 @@ namespace Infrastructure.Data.Migrations
         {
             migrationBuilder.DropTable(
                 name: "BasketItems");
+
+            migrationBuilder.DropTable(
+                name: "Baskets");
 
             migrationBuilder.DropTable(
                 name: "OrderItems");
