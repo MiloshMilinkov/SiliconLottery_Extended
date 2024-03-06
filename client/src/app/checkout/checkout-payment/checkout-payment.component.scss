@@ -12,3 +12,9 @@ button:hover{
     color: white;
     box-shadow: 0 0 5px #b44593, 0 0 10px #b44593, 0 0 20px #b44593, 0 0 40px #b44593;
 }
+.btn-payment:disabled {
+    background-color: #d486bd; 
+    color: white;
+    cursor: not-allowed;
+    border-radius: 5px;
+  }

@@ -45,3 +45,9 @@ button:hover{
     background-color:#b44593; 
   }
   
+  .btn-address:disabled {
+    background-color: #d486bd; 
+    color: white;
+    cursor: not-allowed;
+    border-radius: 5px;
+  }

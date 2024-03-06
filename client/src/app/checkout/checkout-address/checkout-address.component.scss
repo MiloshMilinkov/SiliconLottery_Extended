@@ -28,3 +28,9 @@ h4{
     cursor: not-allowed;
     border-radius: 5px;
   }
+  .btn-address:disabled {
+    background-color: #d486bd; 
+    color: white;
+    cursor: not-allowed;
+    border-radius: 5px;
+  }
