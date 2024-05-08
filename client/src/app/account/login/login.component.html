@@ -4,27 +4,27 @@
         <div class="col-xl-10">
           <div class="card text-black" style="background-color: #111;"> <!-- Dark theme -->
             <div class="row g-0">
-              <div class="col-lg-6 d-flex align-items-center gradient-custom-2" style="background-image: url('/assets/Images/loginbrackground.png'); background-size: cover; background-position: center;"> <!-- Neon gradient background -->
+              <div class="col-lg-6 d-flex align-items-center gradient-custom-2" style="background-image: url('/assets/Images/loginbrackground.png'); background-size: cover; background-position: center;"> 
                 <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                  <p>“In a world of artificial intelligence, humanity becomes both its creator and its captive.”</p>
+                  <p>{{currentLanguage === 'en' ? '“In a world of artificial intelligence, humanity becomes both its creator and its captive.”' : '“U svetu veštačke inteligencije, čovečanstvo postaje i njegov tvorac i njegov zarobljenik.”'}}</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="card-body p-md-5 mx-md-4">
                   <div class="text-center">
                     <img src="/assets/Images/icon.png" alt="" style="width: 185px;">
-                    <h4 class="mt-1 mb-5 pb-1 neon-text" style="color: white;">We are Silicon Lottery</h4>
+                    <h4 class="mt-1 mb-5 pb-1 neon-text" style="color: white;">{{currentLanguage === 'en' ? 'We are Silicon Lottery' : 'Mi smo SILIKONSKA LUTRIJA'}}</h4>
                   </div>
                   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-                    <p class="text-white-50">Please login to your account</p>
-                    <app-text-input [formControl]="loginForm.controls['email']" [label]="'Email address'"></app-text-input>
-                    <app-text-input [formControl]="loginForm.controls['password']" [type]="'password'" [label]="'Password'"></app-text-input>
+                    <p class="text-white-50">{{currentLanguage === 'en' ? 'Please login to your account' : 'Molimo vas da se prijavite na vaš nalog'}}</p>
+                    <app-text-input [formControl]="loginForm.controls['email']" [label]="currentLanguage === 'en' ? 'Email address' : 'Adresa e-pošte'"></app-text-input>
+                    <app-text-input [formControl]="loginForm.controls['password']" [type]="'password'" [label]="currentLanguage === 'en' ? 'Password' : 'Lozinka'"></app-text-input>
                     <div class="text-center pt-1 mb-5 pb-1">
-                      <button [disabled]="loginForm.invalid" class="btn btn-lg btn-primary mt-3 neon-button" type="submit">Sign in</button>
+                      <button [disabled]="loginForm.invalid" class="btn btn-lg btn-primary mt-3 neon-button" type="submit">{{currentLanguage === 'en' ? 'Sign in' : 'Prijavite se'}}</button>
                     </div>
                     <div class="d-flex align-items-center justify-content-center pb-4">
-                      <p class="mb-0 me-2 text-white-50">Don't have an account?</p>
-                      <a routerLink="/account/register" class="btn  me-3 neon-outline-button" id="singup">Sign Up</a>
+                      <p class="mb-0 me-2 text-white-50">{{currentLanguage === 'en' ? 'Don\'t have an account?' : 'Nemate nalog?'}}</p>
+                      <a routerLink="/account/register" class="btn  me-3 neon-outline-button" id="singup">{{currentLanguage === 'en' ? 'Sign Up' : 'Prijavite se'}}</a>
                     </div>
                   </form>
                 </div>

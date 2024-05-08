@@ -12,6 +12,7 @@ import { StepperComponent } from './components/stepper/stepper.component';
 import { CdkStepperModule} from '@angular/cdk/stepper';
 import { BasketSummaryComponent } from './basket-summary/basket-summary.component'
 import { RouterModule } from '@angular/router';
+import { LanguageService } from './language.service';
 
 
 
@@ -46,7 +47,7 @@ import { RouterModule } from '@angular/router';
     TextInputComponent,
     StepperComponent,
     CdkStepperModule,
-    BasketSummaryComponent
+    BasketSummaryComponent,
   ]
   
 })

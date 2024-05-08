@@ -43,7 +43,7 @@ a {
 }
 
 p {
-    color: #EC5BC6; // Consistent text color
+    color: #EC5BC6; 
 }
 
 Additional styling for a more modern look
@@ -52,11 +52,11 @@ nav a {
 }
 
 .dropdown-menu {
-    background-color: #202020; // Dark dropdown background
+    background-color: #202020; 
     border: none;
 
     .dropdown-item {
-        color: #EC5BC6; // Metallic text in dropdown
+        color: #EC5BC6; 
         text-align: center; 
         &:hover {
             background-color: #000000;
@@ -64,21 +64,20 @@ nav a {
     }
 }
 
-// Styling for the shopping cart icon
 .fa-shopping-cart {
-    color: rgb(236, 91, 198); // Metallic icon color
+    color: rgb(236, 91, 198); 
 }
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(236, 91, 198)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    width: 40px; /* Increase width */
-    height: 30px; /* Increase height */
+    width: 40px; 
+    height: 30px; 
     background-size: contain;
     background-repeat: no-repeat;
 }
 .navbar-toggler-icon-account{
-    width: 40px; /* Increase width */
-    height: 40px; /* Increase height */
+    width: 40px; 
+    height: 40px; 
     background-size: contain;
     background-repeat: no-repeat;
     color: #EC5BC6;
@@ -95,19 +94,19 @@ nav a {
 .dropdown-menu {
     background-color: #121212;
     border: none;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); // Add shadow for depth
-    border-radius: 8px; // Rounded corners
-    padding: 10px; // Padding inside the dropdown
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+    border-radius: 8px; 
+    padding: 10px; 
 }
 
 .dropdown-item {
     color: #EC5BC6;
     text-align: center;
-    padding: 8px 20px; // Padding for each item
-    transition: background-color 0.3s ease; // Smooth transition for hover
+    padding: 8px 20px; 
+    transition: background-color 0.3s ease; 
 
     &:hover {
-        background-color: #2a2a2a; // Slightly lighter background on hover
+        background-color: #2a2a2a; 
     }
 }
 
@@ -120,33 +119,42 @@ nav a {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100; /* Adjust as per your z-index requirements */
+    z-index: 100; 
 }
 
 .mainHeader > div {
-    flex: 1; /* Ensures that each child of header takes equal space */
+    flex: 1; 
 }
 
 .logoImage {
-    display: block; /* Makes sure image is a block-level element */
-    margin: 0 auto; /* Centers the image in the div */
+    display: block; 
+    margin: 0 auto; 
 }
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .mainHeader > div {
-        flex: none; /* Adjust this as per your mobile layout */
+        flex: none; 
     }
 }
 .left-container, .right-container {
-    flex: 1;  /* Make both containers take equal space */
+    flex: 1;  
     display: flex;
 }
 
-.left-container {
-    /* Align items to the left if necessary */
-}
+
 
 .right-container {
-    justify-content: flex-end; /* Align items to the right */
+    justify-content: flex-end; 
+}
+.btn-lang {
+    color: #EC5BC6; 
+    text-decoration: none; 
+    padding: 0.5rem 1rem; 
+    margin: 0 0.5rem; 
+    border: none; 
+    background: transparent; 
+    cursor: pointer; 
+
+    &:hover {
+        background-color: #2a2a2a; 
+    }
 }

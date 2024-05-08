@@ -50,16 +50,6 @@ namespace SL_API.Controllers
             {
                 return NotFound();
             }
-            var data= new ProductDto
-            {
-                Id=product.Id,
-                Name=product.Name,
-                Description=product.Description,
-                Price=product.Price,
-                PictureUrl=product.PictureUrl,
-                ProductType=product.ProductType.Name,
-                ProductBrand=product.ProductBrand.Name
-            };
             return Ok(product);
         }
 
